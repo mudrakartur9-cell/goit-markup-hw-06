@@ -2,12 +2,12 @@
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
-  padding: 112px 0;
+  padding: 72px 0;
   background-color: #2e2f42;
   background-image:
     linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     image-set(
-      url("../images/hero-bgm/jpg") 1x,
+      url("../images/hero-bgm.jpg") 1x,
       url("../images/hero-bgm@2x.jpg") 2x
     );
   background-repeat: no-repeat;
