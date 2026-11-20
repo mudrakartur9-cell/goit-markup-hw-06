@@ -26,7 +26,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: calc(100% - 32px);
-  max-width: 408px;
+  max-width: 288px; /* Зменшено базову максимальну ширину для мобільних */
   min-height: 584px;
   padding: 72px 16px 24px;
   background-color: #fcfcfc;
@@ -250,6 +250,7 @@
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
+    max-width: 408px; /* Повертаємо 408px для планшетів і десктопів */
     padding: 72px 24px 24px;
   }
 }
