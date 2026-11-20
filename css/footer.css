@@ -149,19 +149,25 @@
   fill: #ffffff;
 }
 
-/* --- Планшет (min-width: 768px) --- */
-@media screen and (min-width: 768px) {
+/* --- Планшет (min-width: 768px та max-width: 1157px) --- */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-container {
+    max-width: 584px;
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
     align-items: baseline;
     text-align: left;
-    /* Прибрано зайві горизонтальні відступи padding-left/right: 108px */
   }
 
   .footer-info {
     width: 264px;
+  }
+
+  .footer-social {
+    width: 208px;
   }
 
   .footer-subscribe {
@@ -189,21 +195,39 @@
   }
 
   .footer-container {
+    flex-direction: row;
     flex-wrap: nowrap;
     gap: 0;
-    /* Прибрано зайві padding-left/right: 15px, використовується лише базовий контейнер */
+    align-items: baseline;
+    text-align: left;
   }
 
   .footer-info {
+    width: 264px;
     margin-right: 120px;
   }
 
   .footer-social {
+    width: 208px;
     margin-right: 120px;
   }
 
   .footer-subscribe {
-    margin-left: auto;
+    width: auto;
+    margin-left: 0;
+  }
+
+  .footer-subscribe-text {
+    text-align: left;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .footer-subscribe-input {
+    width: 264px;
   }
 
   .footer-social-link svg use {
